@@ -1,14 +1,7 @@
-spring:
-  profile:
-    active:
-      - dev
-  datasource:
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: password
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-server:
-  servlet:
-    context-path: /api/v1/app-elemental-client-service
-  port: 9001
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+server.servlet.context-path=/api/v1/app-elemental-client-service
+server.port=9001
